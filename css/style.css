@@ -1,0 +1,122 @@
+:root {
+  --color-primary: #584a99;
+  --color-secondary: #efe8f6;
+  --color-light: #f7f7f7;
+  --color-error: #f75e4b;
+  --color-alert:#e00606
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  max-width: 1400px;
+  margin: auto;
+  background-color: var(--color-light);
+}
+.title{
+  margin: 30px 60px 0px 60px;
+  color: var(--color-primary);
+}
+.container{
+  display:flex;
+  justify-content: space-between;
+  margin: 100px 60px 50px 60px;
+}
+.products{
+  width: 70%;
+  display: grid;
+  grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  grid-template-rows: repeat(auto-fill,minmax(350px,1fr));
+  column-gap: 50px;
+  row-gap: 80px;
+  
+
+}
+.product{
+  
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 8px 8px 12px #d1cfcf;
+  margin-bottom: 50px;
+ 
+
+}
+.product-image{
+  height: 65%;
+  width: calc(100% - 20px);
+  margin: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.products-data{
+  background-color: var(--color-secondary);
+  padding: 15px;
+  margin: 8px 10px 15px 10px;
+  border-radius: 15px;
+  position: relative;
+  
+}
+.add{
+  background-color: var(--color-light);
+  padding: 3px 9px;
+  border-radius: 50%;
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  position: absolute;
+  bottom: 12px;
+  right: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.add:hover{
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.price{
+  margin-top: 15px;
+  display: inline-block;
+}
+.product-name{
+  color: var(--color-primary);
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.cart{
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  
+}
+.delete-btn{
+  border: 2px solid var(--color-alert);
+  color: var(--color-alert);
+  height: 80px;
+  border-radius: 20px;
+  background: none;
+  font-size: 18px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.total{
+  color: #636262;
+  height: 50px;
+  border: 2px solid #c4b7b7;
+  line-height: 50px;
+  padding-left: 20px;
+  border-radius: 15px;
+}
